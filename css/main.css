@@ -1,0 +1,6 @@
+body{background-color: #03638A;}
+.text{position: relative;color:lime;font-family: 'Ubuntu Mono', monospace;font-weight: 700;text-transform: uppercase;letter-spacing: 10px;}
+.text::after{content:"_";}
+.txt-color{color:#DDDEE1}
+nav ol {background-color:#03638A !important;}
+nav ol .li-color{color:#FECE01}

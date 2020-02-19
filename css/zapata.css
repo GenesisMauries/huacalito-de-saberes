@@ -1,0 +1,6 @@
+.photo-spon{width: 150px; border-radius: 5px;}
+body{background-color: #04D9B2;}
+nav ol{background-color: #04D9B2 !important;}
+.text{position: relative;color:orangered;font-family: 'Ubuntu Mono', monospace;font-weight: 700;text-transform: uppercase;letter-spacing: 10px;}
+.text::after{content:"_";}
+nav ol .li-color{color:indigo}
