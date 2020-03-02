@@ -7,7 +7,7 @@ for (let i = 0; i < textArr.length; i++) {
 }
 // Zapata
 const fetchData = () => {
-    fetch("js/sponsor.json",{})
+    fetch("/js/sponsor.json",{})
     .catch(error => console.log(`Tienes este problemita: ${error.message}`))
     .then((response) => response.json())
     .then(datos => drawButton(datos))
