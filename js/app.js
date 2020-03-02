@@ -7,14 +7,14 @@ for (let i = 0; i < textArr.length; i++) {
 }
 // Zapata
 const fetchData = () => {
-    fetch("/js/sponsor.json",{})
+    fetch("js/sponsor.json",{})
     .catch(error => console.log(`Tienes este problemita: ${error.message}`))
     .then((response) => response.json())
     .then(datos => drawButton(datos))
 }
 const drawButton = (datos)=>{
     for(data of datos){
-      document.getElementById("buttons").innerHTML += `<section class="col-2">
+      document.getElementById("buttons").innerHTML += `<section class="col-lg-2 col-xl-2 col-md-3 col-sm-4 col-xs-4">
       <input class="rounded article" type="image" src="${data.photo}" id="${data.id}" alt="Submit" width="85%" />
         </section>`
     }
