@@ -7,11 +7,13 @@ for (let i = 0; i < textArr.length; i++) {
 }
 // Zapata
 const fetchData = () => {
-    fetch("js/sponsor.json",{})
-    .catch(error => console.log(`Tienes este problemita: ${error.message}`))
+    fetch("/js/sponsor.json")
+    
     .then((response) => response.json())
     .then(datos => drawButton(datos))
+    .catch(error => console.log(`Tienes este problemita: ${error.message}`))
 }
+
 const drawButton = (datos)=>{
     for(data of datos){
       document.getElementById("buttons").innerHTML += `<section class="col-lg-2 col-xl-2 col-md-3 col-sm-4 col-xs-4">
