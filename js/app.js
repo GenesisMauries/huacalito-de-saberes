@@ -7,7 +7,7 @@ for (let i = 0; i < textArr.length; i++) {
 }
 // Zapata
 const fetchData = () => {
-    fetch("/js/sponsor.json")
+    fetch("https://raw.githubusercontent.com/GenesisMauries/huacalito-de-saberes/master/js/sponsor.json")
     
     .then((response) => response.json())
     .then(datos => drawButton(datos))
